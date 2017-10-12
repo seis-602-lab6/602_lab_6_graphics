@@ -73,9 +73,11 @@ public class HCurve
 		// middle of screen, heading up
 		
 		Turtle t = new Turtle(0.5,0.5,90.0);
+		t.penDown();
+		t.setPenRadius(0.01);
 		
 		// initial side of 0.25, 1-deep recursion
-		drawH(t,0.25,1);
+		drawH(t,100,5);
 
 	}
 
