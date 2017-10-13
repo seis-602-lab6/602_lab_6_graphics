@@ -1,4 +1,4 @@
-// team1 commenting 
+// team 1 comment
 import java.awt.Color;
 
 public class Team4Graphics extends Graphics
