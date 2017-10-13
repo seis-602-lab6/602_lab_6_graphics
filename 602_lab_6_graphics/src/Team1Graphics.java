@@ -1,3 +1,4 @@
+// eric says hi!
 import java.awt.Color;
 // team1
 public class Team1Graphics extends Graphics
