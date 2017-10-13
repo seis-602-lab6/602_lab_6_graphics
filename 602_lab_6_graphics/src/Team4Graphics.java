@@ -1,3 +1,4 @@
+import java.awt.Color;
 
 public class Team4Graphics extends Graphics
 {
@@ -53,7 +54,46 @@ public class Team4Graphics extends Graphics
 	public void draw()
 	{
 		turtle.penDown();
-		drawH(this.turtle, 75, 7);
+		turtle.setPenRadius(0.005);
+		turtle.setPenColor(Color.RED);
+
+		// drawSquare(t, 200);
+
+		// drawNestedSquares(t, 50, 20, 20);
+		
+		turtle.penDown();
+		spiral(turtle,10,2,100);
+
+		// drawH(this.turtle, 75, 7);
 		turtle.penUp();
 	}
+
+	private static void changeColor(Turtle t, int num)
+	{
+		switch (num % 3)
+		{
+		case 0:
+			t.setPenColor(Color.BLUE);
+			break;
+		case 1:
+			t.setPenColor(Color.RED);
+			break;
+		case 2:
+			t.setPenColor(Color.GREEN);
+			break;
+		}
+	}
+
+	public static void spiral(Turtle t, double side, double inc, int num)
+	{
+		if (num == 0)
+			return;
+		
+		changeColor(t,num);
+		
+		t.goForward(side);
+		t.turnLeft(90);
+		spiral(t, side+inc, inc, num-1);
+	}
+	
 }
