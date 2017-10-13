@@ -1,4 +1,5 @@
-
+import java.awt.Color;
+// team1
 public class Team1Graphics extends Graphics
 {
 	public Team1Graphics(Turtle t, double startX, double startY, double startHeading)
@@ -52,8 +53,11 @@ public class Team1Graphics extends Graphics
 
 	public void draw()
 	{
+		
 		turtle.penDown();
+		turtle.setPenColor(Color.GREEN);
 		drawH(this.turtle, 75, 1);
+		turtle.setPenColor(Color.BLACK);
 		turtle.penUp();
 	}
 }
