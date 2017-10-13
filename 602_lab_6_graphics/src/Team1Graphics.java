@@ -1,3 +1,4 @@
+// eric says hi!
 import java.awt.Color;
 // team 1 says bye bye
 // team1
