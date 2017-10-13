@@ -53,7 +53,7 @@ public class Team1Graphics extends Graphics
 	public void draw()
 	{
 		turtle.penDown();
-		drawH(this.turtle, 75, 4);
+		drawH(this.turtle, 75, 1);
 		turtle.penUp();
 	}
 }
